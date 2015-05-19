@@ -1,0 +1,19 @@
+
+<h1> CALCULATOR </h1>
+
+<h3> Enter the calculation type: </h3>
+
+<table>
+  <ul>
+    <li> <%= link_to 'Add', {:controller => 'calculations', :action => 'add'} %> </li>
+    <li> <%= link_to 'Subtract', {:controller => 'calculations', :action => 'subtract'} %> </li>
+    <li> <%= link_to 'Sine', {:controller => 'calculations', :action => 'sine'} %> </li>
+    <li> <%= link_to 'Hypotenuse', {:controller => 'calculations', :action => 'hypotenuse'} %> </li>
+  </ul>
+</table>
+
+
+<%= form_tag '/calculations_add_path' do %>
+
+  <%= submit_tag 'Add'  %>
+<% end %>
